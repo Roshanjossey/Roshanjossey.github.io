@@ -3,35 +3,15 @@
 
 <head>
 <meta charset="utf-8">
-<title>Calculator</title>
+<title>Box Move</title>
 <link rel="stylesheet" href="assets/stylesheets/main.css">
-<script src="Calculator.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="boxmove.js"></script>
 </head>
 
 <body>
-
-<!-- Header -->
-
-<header>
-    <h1>Calculator</h1>
-</header>
-
-<!-- Main content -->
-
-<section class="form">
-    <h2>Enter the expression</h2>
-    <form class="user-details">
-        <input id="operand1" type="text" class="input-boxes" placeholder="Operand" pattern="\-?\d*(\.\d*)?" onkeyup="displayResult();">
-        <input id="operator" type="text" class="input-boxes narrow" placeholder="Operator" pattern="[+-^*/]" onkeyup="displayResult();">
-        <input id="operand2" type="text" class="input-boxes" placeholder="Operand" pattern="\-?\d*(\.\d*)?" onkeyup="displayResult();">
-        <span class="equator"> = </span>
-        <input id="result" type="text" class="input-boxes" placeholder="Result" pattern="\-?\d*(\.\d*)?" readonly>
-    </form>
-    </section>
-
-<!-- Footer -->
-
-
+<div class="box-container">
+    <figure class="box center">Move this box</figure>
+</div>
 </body>
 </html>
