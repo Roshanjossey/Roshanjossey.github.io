@@ -1,3 +1,6 @@
+@charset "utf-8";
+@import "bootstrap";
+
 body {
   background-color: #fbc547;
   color: #333;
@@ -22,3 +25,6 @@ a {
   margin-bottom: 1rem;
   width: 10rem;
 }
+
+// Custom page styles
+@import 'card-link';

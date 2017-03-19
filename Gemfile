@@ -2,12 +2,19 @@
 # the following line to use 'http://'
 source 'https://rubygems.org'
 
-# For faster file watcher updates on Windows:
-gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
+ruby '2.3.0'
+    
+gem 'middleman', '~> 4.1', '>= 4.1.6'
+gem 'middleman-blog', '~> 4.0'
+gem 'middleman-livereload', '~> 3.4', '>= 3.4.6'
+gem 'middleman-sprockets', '~> 4.0.0.rc'
 
-# Windows does not come with time zone data
-gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
+gem "therubyracer"
 
-# Middleman Gems
-gem 'middleman', '~> 4.2'
-gem 'middleman-livereload', '~> 3.4'
+gem 'redcarpet', '~> 3.3', '>= 3.3.4'
+              
+gem 'bootstrap-sass'
+gem 'jquery-middleman'
+                
+# For feed.xml.builder
+gem 'builder', '~> 3.2', '>= 3.2.2'
