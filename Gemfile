@@ -16,5 +16,6 @@ gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 gem 'bootstrap-sass'
 gem 'jquery-middleman'
                 
+gem 'middleman-gh-pages'
 # For feed.xml.builder
 gem 'builder', '~> 3.2', '>= 3.2.2'
