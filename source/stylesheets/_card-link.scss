@@ -1,11 +1,10 @@
 .link-card {
-  background: tomato;
   flex-basis: 50%;
   height: calc(100vh/3);
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
   color: white;
   font-weight: bold;
   font-size: 3em;
@@ -15,48 +14,91 @@
 .github {
   background: url("../images/github.jpeg");
   background-size: cover;
-  &:hover {
-    background: url("../images/github-color.jpeg");
+  -webkit-filter: grayscale(100%) 
+                  brightness(75%)
+                  contrast(120%);
+  filter: grayscale(100%) 
+          brightness(75%)
+          contrast(120%);
+  &:hover, &:focus {
+    -webkit-filter: none;
+    filter: none;
     background-size: cover;
   }
 }
 .linkedin {
   background: url("../images/linkedin.jpeg");
   background-size: cover;
-  &:hover {
-    background: url("../images/linkedin-color.jpeg");
+
+  -webkit-filter: grayscale(100%) 
+                  brightness(75%)
+                  contrast(120%);
+  filter: grayscale(100%) 
+          brightness(75%)
+          contrast(120%);
+  &:hover, &:focus {
+    -webkit-filter: none;
+    filter: none;
     background-size: cover;
   }
 }
 .stackoverflow {
   background: url("../images/stackoverflow.jpeg");
   background-size: cover;
-  &:hover {
-    background: url("../images/stackoverflow-color.jpeg");
+  -webkit-filter: grayscale(100%) 
+                  brightness(75%)
+                  contrast(120%);
+  filter: grayscale(100%) 
+          brightness(75%)
+          contrast(120%);
+  &:hover, &:focus {
+    -webkit-filter: none;
+    filter: none;
     background-size: cover;
   }
 }
 .medium {
   background: url("../images/medium.jpeg");
   background-size: cover;
-  &:hover {
-    background: url("../images/medium-color.jpeg");
+  -webkit-filter: grayscale(100%) 
+                  brightness(75%)
+                  contrast(120%);
+  filter: grayscale(100%) 
+          brightness(75%)
+          contrast(120%);
+  &:hover, &:focus {
+    -webkit-filter: none;
+    filter: none;
     background-size: cover;
   }
 }
 .twitter {
   background: url("../images/twitter.jpeg");
   background-size: cover;
-  &:hover {
-    background: url("../images/twitter-color.jpeg");
+  -webkit-filter: grayscale(100%) 
+                  brightness(75%)
+                  contrast(120%);
+  filter: grayscale(100%) 
+          brightness(75%)
+          contrast(120%);
+  &:hover, &:focus {
+    -webkit-filter: none;
+    filter: none;
     background-size: cover;
   }
 }
 .soundcloud {
   background: url("../images/soundcloud.jpeg");
   background-size: cover;
-  &:hover {
-    background: url("../images/soundcloud-color.jpeg");
+  -webkit-filter: grayscale(100%) 
+                  brightness(75%)
+                  contrast(120%);
+  filter: grayscale(100%) 
+          brightness(75%)
+          contrast(120%);
+  &:hover, &:focus {
+    -webkit-filter: none;
+    filter: none;
     background-size: cover;
   }
 }
