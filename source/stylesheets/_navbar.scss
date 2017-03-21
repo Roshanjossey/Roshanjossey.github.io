@@ -1,0 +1,11 @@
+.file-list {
+  height: 50px;
+  margin-left: 53px;
+  li {
+    border: 1px solid #cccccc;
+    border-top: none;
+    &.active {
+      background-color: #cccccc;
+    }
+  }
+}

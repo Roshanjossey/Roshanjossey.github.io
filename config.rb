@@ -18,6 +18,9 @@ page '/*.txt', layout: false
 
 # General configuration
 
+# This will remove extentions like .html
+activate :directory_indexes
+
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload

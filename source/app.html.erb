@@ -1,36 +1,11 @@
 ---
 title: Roshan's site
 ---
+
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-6 col-sm-12">
       <%= partial "navbar" %>
-      <pre>
-<code>
-const roshan = {
-  firstName: 'Roshan',
-  lastName: 'Jossey',
-  avatar: 'https://avatars1.githubusercontent.com/u/8488446?v=3&s=400',
-  createdAt: 'Wed Aug 18 08:30:55 +0530 1993',
-  interests: {
-    technical: [
-      'JavaScript',
-      'Ruby',
-      'Angularjs',
-      'Reactjs',
-      'TDD',
-      'Functional Programming'
-    ],
-    nonTechnical: [
-      'Films',
-      'Mathematics',
-      'Philosophy',
-      'Politics'
-    ]
-  }
-};
-      </code>
-      </pre>
     </div>
     <div class="col-md-6 col-sm-12 card-container">
       <%= partial(:card_link, :locals => { :link_url => "https://github.com/roshanjossey", :link_text => "GitHub", :link_class => "github" , :link_image => "github-icon" }) %>
