@@ -1,14 +1,19 @@
 .link-card {
   flex-basis: 50%;
   height: calc(100vh/3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   color: white;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 50%;
+    height: 50%;
+  }
 }
 
 .github {
