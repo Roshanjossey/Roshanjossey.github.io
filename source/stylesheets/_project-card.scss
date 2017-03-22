@@ -1,0 +1,49 @@
+.project-card {
+  flex-basis: 100%;
+  height: calc(100vh/2);
+
+  color: white;
+  font-weight: bold;
+  font-size: 4em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+.first-contributions {
+  background: url("../images/first-contributions.jpeg");
+  background-size: cover;
+  -webkit-filter: grayscale(100%) 
+                  brightness(75%)
+                  contrast(120%);
+  filter: grayscale(100%) 
+          brightness(75%)
+          contrast(120%);
+  &:hover, &:focus {
+    -webkit-filter: none;
+    filter: none;
+    background-size: cover;
+  }
+}
+.github-battle {
+  background: url("../images/github-battle.jpeg");
+  background-size: cover;
+
+  -webkit-filter: grayscale(100%) 
+                  brightness(75%)
+                  contrast(120%);
+  filter: grayscale(100%) 
+          brightness(75%)
+          contrast(120%);
+  &:hover, &:focus {
+    -webkit-filter: none;
+    filter: none;
+    background-size: cover;
+  }
+}

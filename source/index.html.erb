@@ -4,7 +4,7 @@ title: Roshan's site
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-6 col-sm-12">
-      <%= partial "navbar" %>
+      <%= partial(:navbar, :locals => { :current_page => "index" }) %>
       <pre>
 <code>
 const roshan = {

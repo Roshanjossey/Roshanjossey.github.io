@@ -5,15 +5,34 @@ title: Roshan's site
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-6 col-sm-12">
-      <%= partial "navbar" %>
+      <%= partial(:navbar, :locals => { :current_page => "app" }) %>
+      <pre>
+<code>
+var projects = [
+  {
+    name: 'First Contributions',
+    domain: 'Open source',
+    technologiesUsed: [
+      markdown,
+      slack,
+      reactjs
+    ],
+  },
+  {
+    name: 'GitHub battle',
+    domain: 'Game'
+    technologiesUsed: [
+      reactjs,
+      bootstrap,
+    ],
+  }
+];
+      </code>
+      </pre>
     </div>
     <div class="col-md-6 col-sm-12 card-container">
-      <%= partial(:card_link, :locals => { :link_url => "https://github.com/roshanjossey", :link_text => "GitHub", :link_class => "github" , :link_image => "github-icon" }) %>
-      <%= partial(:card_link, :locals => { :link_url => "https://medium.com/@roshanjossey", :link_text => "Medium", :link_class => "medium", :link_image => "medium-icon"  }) %>
-      <%= partial(:card_link, :locals => { :link_url => "http://stackoverflow.com/users/3951782/sudo-bangbang", :link_text => "Stack Overflow", :link_class => "stackoverflow", :link_image => "stackoverflow-icon"  }) %>
-      <%= partial(:card_link, :locals => { :link_url => "https://www.linkedin.com/in/roshan-jossey-b00989a3/", :link_text => "Linkedin", :link_class => "linkedin", :link_image => "linkedin-icon"  }) %>
-      <%= partial(:card_link, :locals => { :link_url => "https://twitter.com/1stContribution", :link_text => "Twitter", :link_class => "twitter", :link_image => "twitter-icon"  }) %>
-      <%= partial(:card_link, :locals => { :link_url => "https://soundcloud.com/roshan-jossy", :link_text => "SoundCloud", :link_class => "soundcloud", :link_image => "soundcloud-icon"  }) %>
+      <%= partial(:project_card, :locals => { :project_url => "https://github.com/roshanjossey/first-contributions", :project_text => "First Contributions", :project_class => "first-contributions" , :project_image => "first-contribution-icon" }) %>
+      <%= partial(:project_card, :locals => { :project_url => "https://roshanjossey.github.io/github-battle", :project_text => "Github Battle", :project_class => "github-battle", :project_image => "github-battle-icon"  }) %>
     </div>
   </div>
 </div>
