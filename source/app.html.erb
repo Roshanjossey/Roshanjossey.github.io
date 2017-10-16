@@ -10,6 +10,15 @@ title: Roshan's site
 <code>
 var projects = [
   {
+    name: 'saasgrids',
+    domain: 'Integration platform'
+    technologiesUsed: [
+      'reactjs',
+      'golang',
+      'redis',
+    ],
+  },
+  {
     name: 'Aconex Field',
     domain: 'Construction',
     technologiesUsed: [
@@ -35,22 +44,14 @@ var projects = [
       'google apps scripts',
       'Slack'
     ],
-  },
-  {
-    name: 'GitHub battle',
-    domain: 'Game'
-    technologiesUsed: [
-      'reactjs',
-      'bootstrap',
-    ],
   }
 ];
       </code>
       </pre>
     </div>
     <div class="col-md-6 col-sm-12 card-container">
+      <%= partial(:project_card, :locals => { :project_url => "http://saasgrids.com", :project_text => "saasgrids", :project_class => "saasgrids" , :project_image => "saasgrids-icon" }) %>
       <%= partial(:project_card, :locals => { :project_url => "https://roshanjossey.github.io/first-contributions/", :project_text => "First Contributions", :project_class => "first-contributions" , :project_image => "first-contribution-icon" }) %>
-      <%= partial(:project_card, :locals => { :project_url => "https://roshanjossey.github.io/github-battle", :project_text => "Github Battle", :project_class => "github-battle", :project_image => "github-battle-icon"  }) %>
     </div>
   </div>
 </div>
