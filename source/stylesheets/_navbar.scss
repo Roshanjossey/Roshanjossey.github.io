@@ -12,3 +12,15 @@
     }
   }
 }
+
+@media only screen and (max-width: 767px)  {
+  .file-list {
+    padding: 0 40px;
+    margin: unset;
+    li {
+      &:last-child {
+        border: 1px solid #cccccc;
+      }
+    }
+  }
+}

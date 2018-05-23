@@ -44,6 +44,7 @@ GEM
       thor (>= 0.14, < 2.0)
     kramdown (1.13.2)
     libv8 (3.16.14.19)
+    libv8 (3.16.14.19-x86_64-darwin-16)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -130,6 +131,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86_64-darwin-16
 
 DEPENDENCIES
   bootstrap-sass
