@@ -1,10 +1,10 @@
 <!doctype html>
 <html>
   <head>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta charset="utf-8"/>
     <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Roshan's site</title>
@@ -13,75 +13,65 @@
     <script src="/javascripts/site.js"></script>
   </head>
 
-  <body class="app app_index">
-    <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-6 col-sm-12">
-      <ul class="nav navbar-nav file-list">
-  <li class=""><a href="/">index.js</a></li>
-  <li class="active"><a href="/app">app.js</a></li>
-  <li onclick="window.open('https://drive.google.com/file/d/0B_1p1_Oji3GAVVJ4S3F1TU1vY3M/view?usp=sharing')"><a> resume.pdf </a></li>
-</ul>
+<body class="app app_index"><div class="container-fluid"><div class="row">
+        <div class="col-md-6 col-sm-12">          
+          <ul class="nav navbar-nav file-list">
+            <li class=""><a href="/">index.js</a></li>
+            <li class="active"><a href="/app">app.js</a></li>
+            <li onclick="window.open('https://drive.google.com/file/d/0B_1p1_Oji3GAVVJ4S3F1TU1vY3M/view?usp=sharing')"><a> resume.pdf </a></li>
+          </ul>
+          
+          <pre><code>
+          var projects = [
+            {
+              name: 'saasgrids',
+              domain: 'Integration platform'
+              technologiesUsed: [
+                'reactjs',
+                'golang',
+                'redis',
+              ],
+            },
+            {
+              name: 'Aconex Field',
+              domain: 'Construction',
+              technologiesUsed: [
+                'Angularjs',
+                'PostgreSQL',
+                'Cordova'
+              ],
+            },
+            {
+              name: 'First Contributions',
+              domain: 'Open source',
+              technologiesUsed: [
+                'markdown',
+                'slack',
+                'reactjs'
+              ],
+            },
+            {
+              name: 'Deliver it',
+              domain: 'Continuous delivery',
+              technologiesUsed: [
+                'Dashing',
+                'google apps scripts',
+                'Slack'
+              ],
+            }
+          ];
+          </code></pre>          
+       </div>
+        
+      <div class="col-md-6 col-sm-12 card-container">
+        <div onclick="window.open('http://saasgrids.com')" class="project-card saasgrids">
+          <span> saasgrids </span>
+        </div>
 
-      <pre>
-<code>
-var projects = [
-  {
-    name: 'saasgrids',
-    domain: 'Integration platform'
-    technologiesUsed: [
-      'reactjs',
-      'golang',
-      'redis',
-    ],
-  },
-  {
-    name: 'Aconex Field',
-    domain: 'Construction',
-    technologiesUsed: [
-      'Angularjs',
-      'PostgreSQL',
-      'Cordova'
-    ],
-  },
-  {
-    name: 'First Contributions',
-    domain: 'Open source',
-    technologiesUsed: [
-      'markdown',
-      'slack',
-      'reactjs'
-    ],
-  },
-  {
-    name: 'Deliver it',
-    domain: 'Continuous delivery',
-    technologiesUsed: [
-      'Dashing',
-      'google apps scripts',
-      'Slack'
-    ],
-  }
-];
-      </code>
-      </pre>
-    </div>
-    <div class="col-md-6 col-sm-12 card-container">
-      <div onclick="window.open('http://saasgrids.com')" class="project-card saasgrids">
-  <span>
-    saasgrids
-  </span>
-</div>
-
-      <div onclick="window.open('https://roshanjossey.github.io/first-contributions/')" class="project-card first-contributions">
-  <span>
-    First Contributions
-  </span>
-</div>
-
-    </div>
-  </div>
-</div>
-
-  </body>
+        <div onclick="window.open('https://roshanjossey.github.io/first-contributions/')" class="project-card first-contributions">
+          <span> irst Contributions </span>
+        </div>
+      </div>
+        
+</div></div></body>
 </html>
