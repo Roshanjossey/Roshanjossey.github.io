@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="/stylesheets/site.css" rel="stylesheet" />
+    <script src="/javascripts/editor.js" defer></script>
   </head>
 
   <body class="app app_index">
@@ -26,7 +27,11 @@
         class="editor-tabs__tab"
         
       >
-        <span class="editor-tabs__icon" aria-hidden="true"></span>
+          <svg class="editor-tabs__icon editor-tabs__icon--js" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+    <rect width="32" height="32" rx="4" fill="#f7df1e"/>
+    <path fill="#323330" d="M9.5 25.5l2.2-1.3c.4.8.8 1.5 1.7 1.5.9 0 1.5-.3 1.5-1.8v-9.9h2.6v10c0 2.7-1.6 3.9-3.9 3.9-2.1 0-3.3-1.1-4.1-2.3zm9.3-1.3 2.1 1.2c-.7 1.1-2.5 2.3-4.6 2.3-3.1 0-4.7-1.9-4.7-4.4 0-2.6 1.9-4.4 4.8-4.4 2.8 0 4.1 1.8 4.6 3.4l-2.7 1.1c-.3-.8-1.1-1.7-2.2-1.7-1.3 0-2.1.9-2.1 2.5s.8 2.5 2.2 2.5c1 0 1.6-.4 2-1.2z"/>
+  </svg>
+
         index.js
       </a>
     </li>
@@ -36,7 +41,11 @@
         class="editor-tabs__tab editor-tabs__tab--active"
         aria-current="page"
       >
-        <span class="editor-tabs__icon" aria-hidden="true"></span>
+          <svg class="editor-tabs__icon editor-tabs__icon--js" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+    <rect width="32" height="32" rx="4" fill="#f7df1e"/>
+    <path fill="#323330" d="M9.5 25.5l2.2-1.3c.4.8.8 1.5 1.7 1.5.9 0 1.5-.3 1.5-1.8v-9.9h2.6v10c0 2.7-1.6 3.9-3.9 3.9-2.1 0-3.3-1.1-4.1-2.3zm9.3-1.3 2.1 1.2c-.7 1.1-2.5 2.3-4.6 2.3-3.1 0-4.7-1.9-4.7-4.4 0-2.6 1.9-4.4 4.8-4.4 2.8 0 4.1 1.8 4.6 3.4l-2.7 1.1c-.3-.8-1.1-1.7-2.2-1.7-1.3 0-2.1.9-2.1 2.5s.8 2.5 2.2 2.5c1 0 1.6-.4 2-1.2z"/>
+  </svg>
+
         app.js
       </a>
     </li>
@@ -47,7 +56,12 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        <span class="editor-tabs__icon editor-tabs__icon--pdf" aria-hidden="true"></span>
+          <svg class="editor-tabs__icon editor-tabs__icon--pdf" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <path fill="#f7768e" d="M6 2h7l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/>
+    <path fill="#1a1b26" d="M13 2v6h6"/>
+    <text x="7" y="17" fill="#1a1b26" font-size="6" font-family="sans-serif" font-weight="700">PDF</text>
+  </svg>
+
         resume.pdf
         <span class="visually-hidden">(opens in new tab)</span>
       </a>
@@ -55,43 +69,80 @@
   </ul>
 </nav>
 
-      <figure class="editor" role="region" aria-labelledby="editor-title-app-js">
-  <figcaption id="editor-title-app-js" class="editor__titlebar">
-    <span class="editor__controls" aria-hidden="true">
-      <span class="editor__dot editor__dot--close"></span>
-      <span class="editor__dot editor__dot--minimize"></span>
-      <span class="editor__dot editor__dot--maximize"></span>
-    </span>
-    <span class="editor__filename">app.js</span>
-    <span class="editor__mode">javascript</span>
-  </figcaption>
+      <figure
+  class="editor"
+  data-editor
+  tabindex="0"
+  role="application"
+  aria-label="Code editor: app.js. Press H, J, K, or L to move the cursor."
+  aria-keyshortcuts="h Left l Right j Down k Up"
+>
   <div class="editor__body">
-    <pre class="editor__pre" tabindex="0"><code class="editor__code highlight"><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-</pre></td><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">projects</span> <span class="o">=</span> <span class="p">[</span>
-  <span class="p">{</span>
-    <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">First Contributions</span><span class="dl">'</span><span class="p">,</span>
-    <span class="na">domain</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Open source</span><span class="dl">'</span><span class="p">,</span>
-    <span class="na">technologiesUsed</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">markdown</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">reactjs</span><span class="dl">'</span><span class="p">],</span>
-  <span class="p">},</span>
-  <span class="p">{</span>
-    <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Deliver it</span><span class="dl">'</span><span class="p">,</span>
-    <span class="na">domain</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Continuous delivery</span><span class="dl">'</span><span class="p">,</span>
-    <span class="na">technologiesUsed</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">Dashing</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">google apps scripts</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">Slack</span><span class="dl">'</span><span class="p">],</span>
-  <span class="p">},</span>
-<span class="p">];</span>
-</pre></td></tr></tbody></table></code></pre>
+    <div class="editor__lines" data-lines>
+        <div class="editor-line" data-line="1">
+          <span class="editor-line__gutter" data-gutter aria-hidden="true">1</span>
+          <code class="editor-line__content"><span class="kd">const</span> <span class="nx">projects</span> <span class="o">=</span> <span class="p">[</span>
+</code>
+        </div>
+        <div class="editor-line" data-line="2">
+          <span class="editor-line__gutter" data-gutter aria-hidden="true">2</span>
+          <code class="editor-line__content">  <span class="p">{</span>
+</code>
+        </div>
+        <div class="editor-line" data-line="3">
+          <span class="editor-line__gutter" data-gutter aria-hidden="true">3</span>
+          <code class="editor-line__content">    <span class="nx">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">First Contributions</span><span class="dl">'</span><span class="p">,</span>
+</code>
+        </div>
+        <div class="editor-line" data-line="4">
+          <span class="editor-line__gutter" data-gutter aria-hidden="true">4</span>
+          <code class="editor-line__content">    <span class="nx">domain</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Open source</span><span class="dl">'</span><span class="p">,</span>
+</code>
+        </div>
+        <div class="editor-line" data-line="5">
+          <span class="editor-line__gutter" data-gutter aria-hidden="true">5</span>
+          <code class="editor-line__content">    <span class="nx">technologiesUsed</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">markdown</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">reactjs</span><span class="dl">'</span><span class="p">],</span>
+</code>
+        </div>
+        <div class="editor-line" data-line="6">
+          <span class="editor-line__gutter" data-gutter aria-hidden="true">6</span>
+          <code class="editor-line__content">  <span class="p">},</span>
+</code>
+        </div>
+        <div class="editor-line" data-line="7">
+          <span class="editor-line__gutter" data-gutter aria-hidden="true">7</span>
+          <code class="editor-line__content">  <span class="p">{</span>
+</code>
+        </div>
+        <div class="editor-line" data-line="8">
+          <span class="editor-line__gutter" data-gutter aria-hidden="true">8</span>
+          <code class="editor-line__content">    <span class="nx">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Deliver it</span><span class="dl">'</span><span class="p">,</span>
+</code>
+        </div>
+        <div class="editor-line" data-line="9">
+          <span class="editor-line__gutter" data-gutter aria-hidden="true">9</span>
+          <code class="editor-line__content">    <span class="nx">domain</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Continuous delivery</span><span class="dl">'</span><span class="p">,</span>
+</code>
+        </div>
+        <div class="editor-line" data-line="10">
+          <span class="editor-line__gutter" data-gutter aria-hidden="true">10</span>
+          <code class="editor-line__content">    <span class="nx">technologiesUsed</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">Dashing</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">google apps scripts</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">Slack</span><span class="dl">'</span><span class="p">],</span>
+</code>
+        </div>
+        <div class="editor-line" data-line="11">
+          <span class="editor-line__gutter" data-gutter aria-hidden="true">11</span>
+          <code class="editor-line__content">  <span class="p">},</span>
+</code>
+        </div>
+        <div class="editor-line" data-line="12">
+          <span class="editor-line__gutter" data-gutter aria-hidden="true">12</span>
+          <code class="editor-line__content"><span class="p">];</span>
+</code>
+        </div>
+    </div>
+    <span class="editor-cursor" data-cursor aria-hidden="true"></span>
   </div>
+  <p class="editor__status visually-hidden" data-status aria-live="polite" aria-atomic="true"></p>
 </figure>
 
     </section>

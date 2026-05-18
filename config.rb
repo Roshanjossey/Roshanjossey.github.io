@@ -34,12 +34,24 @@ ignore '/code/*'
 ###
 
 helpers do
-  def highlight_code(source, lexer: 'javascript')
+  def strip_rouge_wrapper(html)
+    html
+      .gsub(/\A<pre[^>]*>/, '')
+      .gsub(/<\/pre>\z/, '')
+      .gsub(/\A<code[^>]*>/, '')
+      .gsub(/<\/code>\z/, '')
+  end
+
+  def highlight_code_lines(source, lexer: 'javascript')
     require 'rouge'
     lexer_class = Rouge::Lexer.find_fancy(lexer) || Rouge::Lexers::Javascript
-    inner = Rouge::Formatters::HTML.new
-    formatter = Rouge::Formatters::HTMLTable.new(inner, table_class: 'rouge-table')
-    formatter.format(lexer_class.lex(source)).html_safe
+    formatter = Rouge::Formatters::HTML.new
+
+    source.split("\n").map.with_index(1) do |line, number|
+      tokens = lexer_class.lex("#{line}\n")
+      html = strip_rouge_wrapper(formatter.format(tokens))
+      { number: number, html: html.html_safe }
+    end
   end
 
   def read_code(filename)

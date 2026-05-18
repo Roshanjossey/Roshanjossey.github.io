@@ -1,4 +1,5 @@
 // Rouge / Pygments token classes → Neovim-style colors
+.editor-line__content,
 .highlight {
   .c, .cm, .c1, .cs { color: $text-muted; font-style: italic; } // comments
   .k, .kd, .kn, .kp, .kr, .kt { color: $accent-purple; } // keywords

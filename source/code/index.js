@@ -1,6 +1,6 @@
 const roshan = {
   firstName: 'Roshan',
-  lastName: 'Jossey',
+  lastName: 'Jossy',
   avatar: 'https://avatars1.githubusercontent.com/u/8488446?v=3&s=400',
   createdAt: 'Wed Aug 18 08:30:55 +0530 1993',
   skills: {

@@ -8,6 +8,7 @@ PUBLISH_PATHS = %w[
   index.html
   app
   stylesheets
+  javascripts
   images
   google07b2ea5a3ff58635.html
   first-contributions

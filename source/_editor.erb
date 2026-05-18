@@ -1,14 +1,21 @@
-<figure class="editor" role="region" aria-labelledby="editor-title-<%= filename.gsub('.', '-') %>">
-  <figcaption id="editor-title-<%= filename.gsub('.', '-') %>" class="editor__titlebar">
-    <span class="editor__controls" aria-hidden="true">
-      <span class="editor__dot editor__dot--close"></span>
-      <span class="editor__dot editor__dot--minimize"></span>
-      <span class="editor__dot editor__dot--maximize"></span>
-    </span>
-    <span class="editor__filename"><%= filename %></span>
-    <span class="editor__mode">javascript</span>
-  </figcaption>
+<figure
+  class="editor"
+  data-editor
+  tabindex="0"
+  role="application"
+  aria-label="Code editor: <%= filename %>. Press H, J, K, or L to move the cursor."
+  aria-keyshortcuts="h Left l Right j Down k Up"
+>
   <div class="editor__body">
-    <pre class="editor__pre" tabindex="0"><code class="editor__code highlight"><%= highlight_code(code) %></code></pre>
+    <div class="editor__lines" data-lines>
+      <% highlight_code_lines(code).each do |line| %>
+        <div class="editor-line" data-line="<%= line[:number] %>">
+          <span class="editor-line__gutter" data-gutter aria-hidden="true"><%= line[:number] %></span>
+          <code class="editor-line__content"><%= line[:html] %></code>
+        </div>
+      <% end %>
+    </div>
+    <span class="editor-cursor" data-cursor aria-hidden="true"></span>
   </div>
+  <p class="editor__status visually-hidden" data-status aria-live="polite" aria-atomic="true"></p>
 </figure>

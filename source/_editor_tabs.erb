@@ -6,7 +6,7 @@
         class="editor-tabs__tab<%= current_page == 'index' ? ' editor-tabs__tab--active' : '' %>"
         <%= current_page == 'index' ? 'aria-current="page"' : '' %>
       >
-        <span class="editor-tabs__icon" aria-hidden="true"></span>
+        <%= partial 'tab_icon', locals: { type: :js } %>
         index.js
       </a>
     </li>
@@ -16,7 +16,7 @@
         class="editor-tabs__tab<%= current_page == 'app' ? ' editor-tabs__tab--active' : '' %>"
         <%= current_page == 'app' ? 'aria-current="page"' : '' %>
       >
-        <span class="editor-tabs__icon" aria-hidden="true"></span>
+        <%= partial 'tab_icon', locals: { type: :js } %>
         app.js
       </a>
     </li>
@@ -27,7 +27,7 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        <span class="editor-tabs__icon editor-tabs__icon--pdf" aria-hidden="true"></span>
+        <%= partial 'tab_icon', locals: { type: :pdf } %>
         resume.pdf
         <span class="visually-hidden">(opens in new tab)</span>
       </a>

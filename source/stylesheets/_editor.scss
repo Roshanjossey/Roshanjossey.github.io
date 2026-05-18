@@ -1,6 +1,7 @@
 .editor-tabs {
+  flex-shrink: 0;
   margin: 0;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   background: $bg-surface;
   border-bottom: 1px solid $border-subtle;
 
@@ -16,8 +17,8 @@
   &__tab {
     display: inline-flex;
     align-items: center;
-    gap: 0.45rem;
-    padding: 0.65rem 1rem;
+    gap: 0.5rem;
+    padding: 0.6rem 0.9rem;
     font-family: $font-mono;
     font-size: 0.8125rem;
     color: $text-muted;
@@ -40,138 +41,108 @@
 
     &--active {
       color: $text-primary;
-      background: $bg-tab-active;
+      background: $bg-base;
       border-color: $border-subtle;
     }
   }
 
   &__icon {
-    width: 0.55rem;
-    height: 0.7rem;
-    border: 1.5px solid currentColor;
-    border-radius: 1px;
-    opacity: 0.7;
+    flex-shrink: 0;
+    display: block;
 
-    &--pdf {
-      width: 0.65rem;
-      height: 0.75rem;
-      border-radius: 0;
+    &--js {
+      border-radius: 3px;
     }
   }
 }
 
 .editor {
   margin: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
   background: $bg-base;
   border: 1px solid $border-subtle;
-  border-radius: 0 0 $radius-md $radius-md;
+  border-top: none;
+  border-radius: 0;
   box-shadow: $shadow-editor;
   overflow: hidden;
+  outline: none;
 
-  &__titlebar {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.55rem 1rem;
-    font-family: $font-mono;
-    font-size: 0.75rem;
-    color: $text-muted;
-    background: $bg-elevated;
-    border-bottom: 1px solid $border-subtle;
-  }
-
-  &__controls {
-    display: flex;
-    gap: 0.4rem;
-  }
-
-  &__dot {
-    width: 0.7rem;
-    height: 0.7rem;
-    border-radius: 50%;
-
-    &--close { background: $accent-red; }
-    &--minimize { background: $accent-yellow; }
-    &--maximize { background: $accent-green; }
-  }
-
-  &__filename {
-    flex: 1;
-    color: $text-primary;
-    font-weight: 500;
-  }
-
-  &__mode {
-    padding: 0.15rem 0.5rem;
-    color: $accent-cyan;
-    background: rgba(125, 207, 255, 0.1);
-    border-radius: $radius-sm;
+  &:focus-visible {
+    box-shadow: $shadow-editor, inset 0 0 0 2px rgba(122, 162, 247, 0.35);
   }
 
   &__body {
-    overflow: auto;
+    position: relative;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
   }
 
-  &__pre {
-    margin: 0;
+  &__lines {
     padding: 0;
-    overflow: auto;
-    font-family: $font-mono;
-    font-size: 0.8125rem;
-    line-height: 1.65;
-    tab-size: 2;
-    background: $bg-base;
-    border: none;
-
-    &:focus-visible {
-      outline: none;
-      box-shadow: inset $focus-ring;
-    }
   }
 
-  &__code {
-    display: block;
-    padding: 1rem 0;
+  &__status {
+    margin: 0;
+  }
+}
+
+.editor-line {
+  display: flex;
+  min-height: 1.65em;
+  line-height: 1.65;
+  font-family: $font-mono;
+  font-size: 0.8125rem;
+
+  &--current {
+    background: rgba(122, 162, 247, 0.08);
+  }
+
+  &--pad .editor-line__content {
+    min-height: 1.65em;
+  }
+
+  &__gutter {
+    flex: 0 0 auto;
+    min-width: 3.5rem;
+    padding: 0 1rem;
+    color: $text-muted;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+    user-select: none;
+    border-right: 1px solid $border-subtle;
+    background: rgba(0, 0, 0, 0.2);
+    transition: color 0.1s ease;
+  }
+
+  &--current .editor-line__gutter {
+    color: $accent-cyan;
+    font-weight: 600;
+  }
+
+  &__content {
+    flex: 1;
+    margin: 0;
+    padding: 0 1rem;
+    white-space: pre;
     color: $text-primary;
     background: transparent;
-
-    &.highlight {
-      background: transparent;
-    }
-
-    table.rouge-table {
-      width: 100%;
-      border-spacing: 0;
-    }
-
-    .rouge-gutter {
-      width: 3rem;
-      padding: 0;
-      vertical-align: top;
-      border-right: 1px solid $border-subtle;
-      background: rgba(0, 0, 0, 0.2);
-
-      pre.lineno {
-        margin: 0;
-        padding: 1rem 0.75rem;
-        color: $text-muted;
-        text-align: right;
-        user-select: none;
-        background: transparent;
-        border: none;
-      }
-    }
-
-    .rouge-code {
-      vertical-align: top;
-
-      pre {
-        margin: 0;
-        padding: 1rem;
-        white-space: pre;
-        background: transparent;
-        border: none;
-      }
-    }
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
   }
+}
+
+.editor-cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background: rgba(192, 202, 245, 0.85);
+  mix-blend-mode: difference;
+  z-index: 2;
+  transition: transform 0.05s linear;
 }
