@@ -26,7 +26,8 @@ body {
   color: $text-primary;
   background: $bg-surface;
   background-image:
-    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(254, 128, 25, 0.08), transparent),
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(135, 107, 214, 0.08), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 100%, rgba(4, 192, 199, 0.05), transparent),
     linear-gradient(180deg, $bg-surface 0%, $bg-base 100%);
 }
 
@@ -50,7 +51,7 @@ body {
   padding: 0.6rem 1rem;
   font-weight: 600;
   color: $bg-base;
-  background: $accent-blue;
+  background: $accent-cyan;
   border-radius: $radius-sm;
   text-decoration: none;
   transform: translateY(-200%);

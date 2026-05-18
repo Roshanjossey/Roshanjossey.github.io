@@ -1,29 +1,32 @@
-// Gruvbox Dark (hard) — Neovim colorscheme
-$bg-base: #1d2021;
-$bg-surface: #282828;
-$bg-elevated: #3c3836;
-$bg-tab: #32302f;
-$bg-tab-active: #1d2021;
+// SerialExperimentsLain — https://github.com/lu-ren/SerialExperimentsLain
+$bg-base: #152126;
+$bg-surface: #192224;
+$bg-elevated: #222e30;
+$bg-tab: #2b2d4d;
+$bg-tab-active: #152126;
 
-$text-primary: #ebdbb2;
-$text-muted: #928374;
-$text-dim: #a89984;
+$text-primary: #c0b1c2;
+$text-muted: #616f73;
+$text-dim: #a2a7a9;
 
-$accent-blue: #83a598;
-$accent-cyan: #8ec07c;
-$accent-green: #b8bb26;
-$accent-purple: #d3869b;
-$accent-orange: #fe8019;
-$accent-red: #fb4934;
-$accent-yellow: #fabd2f;
-$accent-magenta: #cc241d;
+$accent-purple: #876bd6;
+$accent-green: #31cc43;
+$accent-cyan: #04c0c7;
+$accent-red: #d6498b;
+$accent-magenta: #d12eb0;
+$accent-teal: #79c7ad;
+$accent-blue: #556a92;
+$accent-orange: #e63d00;
+$accent-yellow: #bd9700;
+$accent-pink: #c153e6;
 
-$border-subtle: #504945;
-$border-focus: #fe8019;
+$border-subtle: #5e6c70;
+$border-focus: #04c0c7;
 
-$line-highlight: rgba(250, 189, 47, 0.1);
-$gutter-active: #fabd2f;
-$cursor-color: #ebdbb2;
+$line-nr: #184563;
+$line-highlight: #222e30;
+$gutter-active: #32c26c;
+$cursor-color: #f9f9f9;
 
 $font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 $font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
@@ -34,4 +37,4 @@ $radius-lg: 14px;
 
 $shadow-editor: 0 16px 48px rgba(0, 0, 0, 0.5);
 
-$focus-ring: 0 0 0 3px rgba(254, 128, 25, 0.45);
+$focus-ring: 0 0 0 3px rgba(4, 192, 199, 0.4);

@@ -40,8 +40,8 @@
     }
 
     &--active {
-      color: $text-primary;
-      background: $bg-base;
+      color: $gutter-active;
+      background: $bg-tab-active;
       border-color: $border-subtle;
     }
   }
@@ -71,7 +71,7 @@
   outline: none;
 
   &:focus-visible {
-    box-shadow: $shadow-editor, inset 0 0 0 2px rgba(254, 128, 25, 0.35);
+    box-shadow: $shadow-editor, inset 0 0 0 2px rgba(4, 192, 199, 0.4);
   }
 
   &__body {
@@ -109,12 +109,12 @@
     flex: 0 0 auto;
     min-width: 3.5rem;
     padding: 0 1rem;
-    color: $text-muted;
+    color: $line-nr;
     font-variant-numeric: tabular-nums;
     text-align: right;
     user-select: none;
     border-right: 1px solid $border-subtle;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(83, 105, 145, 0.12);
     transition: color 0.1s ease;
   }
 
@@ -142,7 +142,7 @@
   left: 0;
   pointer-events: none;
   background: $cursor-color;
-  opacity: 0.9;
+  opacity: 0.95;
   z-index: 2;
   transition: transform 0.05s linear;
 }

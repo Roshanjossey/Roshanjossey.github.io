@@ -1,18 +1,19 @@
-// Rouge tokens → Gruvbox highlight groups
+// Rouge tokens → SerialExperimentsLain highlight groups
 .editor-line__content,
 .highlight {
   .c, .cm, .c1, .cs { color: $text-muted; font-style: italic; }
-  .k, .kd, .kn, .kp, .kr, .kt { color: $accent-orange; }
-  .s, .s1, .s2, .sb, .sc, .sd, .sh, .sx { color: $accent-green; }
-  .m, .mi, .mf, .mh, .mo, .il { color: $accent-purple; }
-  .nf, .fm { color: $accent-blue; }
-  .nc, .nn, .ne { color: $accent-yellow; }
-  .na, .nv, .vc, .vg, .vi { color: $accent-blue; }
-  .no, .nb, .bp { color: $accent-purple; }
-  .nt { color: $accent-red; }
-  .o, .ow { color: $accent-cyan; }
+  .k, .kd, .kn, .kp, .kr { color: $accent-red; font-weight: bold; }
+  .kt { color: $accent-blue; font-weight: bold; }
+  .s, .s1, .s2, .sb, .sc, .sd, .sh, .sx { color: $accent-teal; }
+  .dl { color: $accent-teal; }
+  .m, .mi, .mf, .mh, .mo, .il { color: $text-dim; }
+  .nf, .fm { color: $accent-cyan; font-weight: bold; }
+  .nc, .nn, .ne { color: $accent-blue; font-weight: bold; }
+  .na, .nv, .vc, .vg, .vi { color: $accent-purple; }
+  .nx { color: $accent-purple; }
+  .no, .nb, .bp { color: $text-dim; }
+  .nt { color: $accent-yellow; }
+  .o, .ow { color: $accent-orange; font-weight: bold; }
   .p { color: $text-dim; }
   .nl { color: $text-primary; }
-  .nx { color: $accent-red; }
-  .dl { color: $accent-green; }
 }
