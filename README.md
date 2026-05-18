@@ -2,7 +2,7 @@
 
 ### [Demo](https://roshanjossey.github.io)
 
-This site is built using [Middleman](https://middlemanapp.com). Source and published site both live on the `master` branch.
+This site is built with [Middleman](https://middlemanapp.com).
 
 ## Local development
 
@@ -13,10 +13,17 @@ bundle exec middleman server
 
 Open http://localhost:4567
 
-## Build & publish to GitHub Pages
+## Deploy to GitHub Pages
+
+Pushes to `master` run [.github/workflows/deploy.yml](.github/workflows/deploy.yml), which builds with Middleman and publishes the `build/` output via GitHub Actions (not Jekyll).
+
+**One-time repo setup:** GitHub → **Settings** → **Pages** → **Build and deployment** → **Source:** **GitHub Actions**.
+
+To build locally without deploying:
 
 ```bash
-bundle exec rake publish
+bundle exec middleman build
+# output in build/
 ```
 
-This builds the site and updates the static files at the repository root for GitHub Pages.
+Optional: `bundle exec rake publish` copies `build/` into the repo root (legacy workflow; CI deploys from `build/` directly).

@@ -39,7 +39,6 @@ task publish: :build do
     end
   end
 
-  # Legacy paths from the old setup
-  FileUtils.rm_rf(File.join(ROOT, 'javascripts'))
+  # Legacy directory-style google verification path
   FileUtils.rm_rf(File.join(ROOT, 'google07b2ea5a3ff58635'))
 end
