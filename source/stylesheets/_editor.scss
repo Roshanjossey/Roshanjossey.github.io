@@ -71,7 +71,7 @@
   outline: none;
 
   &:focus-visible {
-    box-shadow: $shadow-editor, inset 0 0 0 2px rgba(122, 162, 247, 0.35);
+    box-shadow: $shadow-editor, inset 0 0 0 2px rgba(254, 128, 25, 0.35);
   }
 
   &__body {
@@ -98,7 +98,7 @@
   font-size: 0.8125rem;
 
   &--current {
-    background: rgba(122, 162, 247, 0.08);
+    background: $line-highlight;
   }
 
   &--pad .editor-line__content {
@@ -119,7 +119,7 @@
   }
 
   &--current .editor-line__gutter {
-    color: $accent-cyan;
+    color: $gutter-active;
     font-weight: 600;
   }
 
@@ -141,8 +141,8 @@
   top: 0;
   left: 0;
   pointer-events: none;
-  background: rgba(192, 202, 245, 0.85);
-  mix-blend-mode: difference;
+  background: $cursor-color;
+  opacity: 0.9;
   z-index: 2;
   transition: transform 0.05s linear;
 }

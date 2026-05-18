@@ -1,25 +1,29 @@
-// Tokyo Night–inspired palette (popular Neovim theme)
-$bg-base: #1a1b26;
-$bg-surface: #16161e;
-$bg-elevated: #24283b;
-$bg-tab: #1f2335;
-$bg-tab-active: #292e42;
+// Gruvbox Dark (hard) — Neovim colorscheme
+$bg-base: #1d2021;
+$bg-surface: #282828;
+$bg-elevated: #3c3836;
+$bg-tab: #32302f;
+$bg-tab-active: #1d2021;
 
-$text-primary: #c0caf5;
-$text-muted: #565f89;
-$text-dim: #9aa5ce;
+$text-primary: #ebdbb2;
+$text-muted: #928374;
+$text-dim: #a89984;
 
-$accent-blue: #7aa2f7;
-$accent-cyan: #7dcfff;
-$accent-green: #9ece6a;
-$accent-purple: #bb9af7;
-$accent-orange: #ff9e64;
-$accent-red: #f7768e;
-$accent-yellow: #e0af68;
-$accent-magenta: #ff007c;
+$accent-blue: #83a598;
+$accent-cyan: #8ec07c;
+$accent-green: #b8bb26;
+$accent-purple: #d3869b;
+$accent-orange: #fe8019;
+$accent-red: #fb4934;
+$accent-yellow: #fabd2f;
+$accent-magenta: #cc241d;
 
-$border-subtle: #292e42;
-$border-focus: #7aa2f7;
+$border-subtle: #504945;
+$border-focus: #fe8019;
+
+$line-highlight: rgba(250, 189, 47, 0.1);
+$gutter-active: #fabd2f;
+$cursor-color: #ebdbb2;
 
 $font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 $font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
@@ -28,6 +32,6 @@ $radius-sm: 6px;
 $radius-md: 10px;
 $radius-lg: 14px;
 
-$shadow-editor: 0 16px 48px rgba(0, 0, 0, 0.45);
+$shadow-editor: 0 16px 48px rgba(0, 0, 0, 0.5);
 
-$focus-ring: 0 0 0 3px rgba(122, 162, 247, 0.55);
+$focus-ring: 0 0 0 3px rgba(254, 128, 25, 0.45);
