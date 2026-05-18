@@ -1,0 +1,177 @@
+.editor-tabs {
+  margin: 0;
+  padding: 0 1rem;
+  background: $bg-surface;
+  border-bottom: 1px solid $border-subtle;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.65rem 1rem;
+    font-family: $font-mono;
+    font-size: 0.8125rem;
+    color: $text-muted;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-bottom: none;
+    border-radius: $radius-sm $radius-sm 0 0;
+    transition: color 0.15s ease, background 0.15s ease;
+
+    &:hover {
+      color: $text-primary;
+      background: $bg-tab;
+    }
+
+    &:focus-visible {
+      outline: none;
+      box-shadow: $focus-ring;
+      z-index: 1;
+    }
+
+    &--active {
+      color: $text-primary;
+      background: $bg-tab-active;
+      border-color: $border-subtle;
+    }
+  }
+
+  &__icon {
+    width: 0.55rem;
+    height: 0.7rem;
+    border: 1.5px solid currentColor;
+    border-radius: 1px;
+    opacity: 0.7;
+
+    &--pdf {
+      width: 0.65rem;
+      height: 0.75rem;
+      border-radius: 0;
+    }
+  }
+}
+
+.editor {
+  margin: 0;
+  background: $bg-base;
+  border: 1px solid $border-subtle;
+  border-radius: 0 0 $radius-md $radius-md;
+  box-shadow: $shadow-editor;
+  overflow: hidden;
+
+  &__titlebar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.55rem 1rem;
+    font-family: $font-mono;
+    font-size: 0.75rem;
+    color: $text-muted;
+    background: $bg-elevated;
+    border-bottom: 1px solid $border-subtle;
+  }
+
+  &__controls {
+    display: flex;
+    gap: 0.4rem;
+  }
+
+  &__dot {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+
+    &--close { background: $accent-red; }
+    &--minimize { background: $accent-yellow; }
+    &--maximize { background: $accent-green; }
+  }
+
+  &__filename {
+    flex: 1;
+    color: $text-primary;
+    font-weight: 500;
+  }
+
+  &__mode {
+    padding: 0.15rem 0.5rem;
+    color: $accent-cyan;
+    background: rgba(125, 207, 255, 0.1);
+    border-radius: $radius-sm;
+  }
+
+  &__body {
+    overflow: auto;
+  }
+
+  &__pre {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    font-family: $font-mono;
+    font-size: 0.8125rem;
+    line-height: 1.65;
+    tab-size: 2;
+    background: $bg-base;
+    border: none;
+
+    &:focus-visible {
+      outline: none;
+      box-shadow: inset $focus-ring;
+    }
+  }
+
+  &__code {
+    display: block;
+    padding: 1rem 0;
+    color: $text-primary;
+    background: transparent;
+
+    &.highlight {
+      background: transparent;
+    }
+
+    table.rouge-table {
+      width: 100%;
+      border-spacing: 0;
+    }
+
+    .rouge-gutter {
+      width: 3rem;
+      padding: 0;
+      vertical-align: top;
+      border-right: 1px solid $border-subtle;
+      background: rgba(0, 0, 0, 0.2);
+
+      pre.lineno {
+        margin: 0;
+        padding: 1rem 0.75rem;
+        color: $text-muted;
+        text-align: right;
+        user-select: none;
+        background: transparent;
+        border: none;
+      }
+    }
+
+    .rouge-code {
+      vertical-align: top;
+
+      pre {
+        margin: 0;
+        padding: 1rem;
+        white-space: pre;
+        background: transparent;
+        border: none;
+      }
+    }
+  }
+}

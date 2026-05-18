@@ -1,0 +1,51 @@
+.link-card {
+  position: relative;
+  flex: 1 1 calc(50% - 2px);
+  min-height: 10rem;
+  min-height: calc(100vh / 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%) brightness(0.72) contrast(1.1);
+  transition: filter 0.25s ease, transform 0.2s ease;
+
+  img {
+    width: 200px;
+    max-width: 40vw;
+    height: auto;
+    max-height: 150px;
+    object-fit: contain;
+  }
+
+  &__label {
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.65);
+  }
+
+  &:hover {
+    filter: none;
+    transform: scale(1.01);
+  }
+
+  &:focus-visible {
+    outline: none;
+    filter: none;
+    box-shadow: inset $focus-ring;
+    z-index: 1;
+  }
+}
+
+.github { background-image: url('../images/github.jpeg'); }
+.linkedin { background-image: url('../images/linkedin.jpeg'); }
+.stackoverflow { background-image: url('../images/stackoverflow.jpeg'); }
+.medium { background-image: url('../images/medium.jpeg'); }
+.twitter { background-image: url('../images/twitter.jpeg'); }
+.dribbble { background-image: url('../images/soundcloud.jpeg'); }

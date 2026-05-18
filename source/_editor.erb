@@ -1,0 +1,14 @@
+<figure class="editor" role="region" aria-labelledby="editor-title-<%= filename.gsub('.', '-') %>">
+  <figcaption id="editor-title-<%= filename.gsub('.', '-') %>" class="editor__titlebar">
+    <span class="editor__controls" aria-hidden="true">
+      <span class="editor__dot editor__dot--close"></span>
+      <span class="editor__dot editor__dot--minimize"></span>
+      <span class="editor__dot editor__dot--maximize"></span>
+    </span>
+    <span class="editor__filename"><%= filename %></span>
+    <span class="editor__mode">javascript</span>
+  </figcaption>
+  <div class="editor__body">
+    <pre class="editor__pre" tabindex="0"><code class="editor__code highlight"><%= highlight_code(code) %></code></pre>
+  </div>
+</figure>

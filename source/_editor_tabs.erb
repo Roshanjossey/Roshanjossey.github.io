@@ -1,0 +1,36 @@
+<nav class="editor-tabs" aria-label="Site sections">
+  <ul class="editor-tabs__list" role="list">
+    <li>
+      <a
+        href="/"
+        class="editor-tabs__tab<%= current_page == 'index' ? ' editor-tabs__tab--active' : '' %>"
+        <%= current_page == 'index' ? 'aria-current="page"' : '' %>
+      >
+        <span class="editor-tabs__icon" aria-hidden="true"></span>
+        index.js
+      </a>
+    </li>
+    <li>
+      <a
+        href="/app"
+        class="editor-tabs__tab<%= current_page == 'app' ? ' editor-tabs__tab--active' : '' %>"
+        <%= current_page == 'app' ? 'aria-current="page"' : '' %>
+      >
+        <span class="editor-tabs__icon" aria-hidden="true"></span>
+        app.js
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/file/d/1xzvken20iATaaB-JNcsmbJrVb88BSWLW/view?usp=sharing"
+        class="editor-tabs__tab"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="editor-tabs__icon editor-tabs__icon--pdf" aria-hidden="true"></span>
+        resume.pdf
+        <span class="visually-hidden">(opens in new tab)</span>
+      </a>
+    </li>
+  </ul>
+</nav>

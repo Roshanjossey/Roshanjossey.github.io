@@ -1,0 +1,33 @@
+// Tokyo Night–inspired palette (popular Neovim theme)
+$bg-base: #1a1b26;
+$bg-surface: #16161e;
+$bg-elevated: #24283b;
+$bg-tab: #1f2335;
+$bg-tab-active: #292e42;
+
+$text-primary: #c0caf5;
+$text-muted: #565f89;
+$text-dim: #9aa5ce;
+
+$accent-blue: #7aa2f7;
+$accent-cyan: #7dcfff;
+$accent-green: #9ece6a;
+$accent-purple: #bb9af7;
+$accent-orange: #ff9e64;
+$accent-red: #f7768e;
+$accent-yellow: #e0af68;
+$accent-magenta: #ff007c;
+
+$border-subtle: #292e42;
+$border-focus: #7aa2f7;
+
+$font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+$font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+
+$radius-sm: 6px;
+$radius-md: 10px;
+$radius-lg: 14px;
+
+$shadow-editor: 0 16px 48px rgba(0, 0, 0, 0.45);
+
+$focus-ring: 0 0 0 3px rgba(122, 162, 247, 0.55);

@@ -1,0 +1,29 @@
+---
+title: Roshan Jossey — Portfolio
+description: Portfolio of Roshan Jossey — developer profile and links.
+---
+
+<main id="main-content" class="page">
+  <div class="page__grid">
+    <section class="page__editor" aria-labelledby="profile-heading">
+      <h1 id="profile-heading" class="visually-hidden">Profile</h1>
+      <%= partial 'editor_tabs', locals: { current_page: 'index' } %>
+      <%= partial 'editor', locals: {
+        filename: 'index.js',
+        code: read_code('index.js')
+      } %>
+    </section>
+
+    <section class="page__links" aria-labelledby="links-heading">
+      <h2 id="links-heading" class="visually-hidden">Social and professional links</h2>
+      <div class="card-container">
+        <%= partial(:card_link, :locals => { :link_url => "https://github.com/roshanjossey", :link_text => "GitHub", :link_class => "github" , :link_image => "github-icon" }) %>
+        <%= partial(:card_link, :locals => { :link_url => "https://medium.com/@roshanjossey", :link_text => "Medium", :link_class => "medium", :link_image => "medium-icon"  }) %>
+        <%= partial(:card_link, :locals => { :link_url => "http://stackoverflow.com/users/3951782/sudo-bangbang", :link_text => "Stack Overflow", :link_class => "stackoverflow", :link_image => "stackoverflow-icon"  }) %>
+        <%= partial(:card_link, :locals => { :link_url => "https://www.linkedin.com/in/roshan-jossey-b00989a3/", :link_text => "LinkedIn", :link_class => "linkedin", :link_image => "linkedin-icon"  }) %>
+        <%= partial(:card_link, :locals => { :link_url => "https://twitter.com/sudo__bangbang", :link_text => "Twitter", :link_class => "twitter", :link_image => "twitter-icon"  }) %>
+        <%= partial(:card_link, :locals => { :link_url => "https://dribbble.com/sudo_bangbang", :link_text => "Dribbble", :link_class => "dribbble", :link_image => "dribbble-icon"  }) %>
+      </div>
+    </section>
+  </div>
+</main>

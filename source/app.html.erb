@@ -1,0 +1,25 @@
+---
+title: Roshan Jossey — Projects
+description: Selected projects by Roshan Jossey.
+---
+
+<main id="main-content" class="page">
+  <div class="page__grid">
+    <section class="page__editor" aria-labelledby="projects-heading">
+      <h1 id="projects-heading" class="visually-hidden">Projects</h1>
+      <%= partial 'editor_tabs', locals: { current_page: 'app' } %>
+      <%= partial 'editor', locals: {
+        filename: 'app.js',
+        code: read_code('app.js')
+      } %>
+    </section>
+
+    <section class="page__links" aria-labelledby="projects-links-heading">
+      <h2 id="projects-links-heading" class="visually-hidden">Project links</h2>
+      <div class="card-container">
+        <%= partial(:project_card, :locals => { :project_url => "http://saasgrids.com", :project_text => "saasgrids", :project_class => "saasgrids" , :project_image => "saasgrids-icon" }) %>
+        <%= partial(:project_card, :locals => { :project_url => "https://roshanjossey.github.io/first-contributions/", :project_text => "First Contributions", :project_class => "first-contributions" , :project_image => "first-contribution-icon" }) %>
+      </div>
+    </section>
+  </div>
+</main>

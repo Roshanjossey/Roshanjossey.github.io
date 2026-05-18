@@ -1,110 +1,212 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Roshan's site</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio of Roshan Jossey — developer profile and links.">
+    <meta name="color-scheme" content="dark">
+    <title>Roshan Jossey — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="/stylesheets/site.css" rel="stylesheet" />
-    <script src="/javascripts/site.js"></script>
   </head>
 
   <body class="index">
-    <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-6 col-sm-12">
-      <ul class="nav navbar-nav file-list">
-  <li class="active"><a href="/">index.js</a></li>
-  <li class=""><a href="/app">app.js</a></li>
-  <li onclick="window.open('https://drive.google.com/file/d/0B_1p1_Oji3GAVVJ4S3F1TU1vY3M/view?usp=sharing')"><a> resume.pdf </a></li>
-</ul>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <main id="main-content" class="page">
+  <div class="page__grid">
+    <section class="page__editor" aria-labelledby="profile-heading">
+      <h1 id="profile-heading" class="visually-hidden">Profile</h1>
+      <nav class="editor-tabs" aria-label="Site sections">
+  <ul class="editor-tabs__list" role="list">
+    <li>
+      <a
+        href="/"
+        class="editor-tabs__tab editor-tabs__tab--active"
+        aria-current="page"
+      >
+        <span class="editor-tabs__icon" aria-hidden="true"></span>
+        index.js
+      </a>
+    </li>
+    <li>
+      <a
+        href="/app"
+        class="editor-tabs__tab"
+        
+      >
+        <span class="editor-tabs__icon" aria-hidden="true"></span>
+        app.js
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/file/d/1xzvken20iATaaB-JNcsmbJrVb88BSWLW/view?usp=sharing"
+        class="editor-tabs__tab"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="editor-tabs__icon editor-tabs__icon--pdf" aria-hidden="true"></span>
+        resume.pdf
+        <span class="visually-hidden">(opens in new tab)</span>
+      </a>
+    </li>
+  </ul>
+</nav>
 
-      <pre>
-<code>
-const roshan = {
-  firstName: 'Roshan',
-  lastName: 'Jossy',
-  avatar: 'https://avatars1.githubusercontent.com/u/8488446?v=3&s=400',
-  createdAt: 'Wed Aug 18 08:30:55 +0530 1993',
-  skills: {
-    technical: [
-      'JavaScript',
-      'TypeScript',
-      'Vuejs',
-      'Nuxt',
-      'Ruby',
-      'Reactjs',
-      'Ruby on Rails',
-      'Python',
-    ],
-    developmentPractices: [
-      'Test Driven Development',
-      'Pair Programming',
-      'Object oriented programming',
-      'Continuous integration'
-    ]
-  }
-  interests: [
-    'Films',
-    'Mathematical Logic',
-    'Abstract algebra',
-    'Philosophy',
-    'Politics'
-  ]
-};
-      </code>
-      </pre>
-    </div>
-    <div class="col-md-6 col-sm-12 card-container">
-      <div onclick="window.open('https://github.com/roshanjossey')" class="link-card github">
-  <img src="images/github-icon.png" alt="">
-  <span>
-    GitHub
-  </span>
-</div>
-
-      <div onclick="window.open('https://medium.com/@roshanjossey')" class="link-card medium">
-  <img src="images/medium-icon.png" alt="">
-  <span>
-    Medium
-  </span>
-</div>
-
-      <div onclick="window.open('http://stackoverflow.com/users/3951782/sudo-bangbang')" class="link-card stackoverflow">
-  <img src="images/stackoverflow-icon.png" alt="">
-  <span>
-    Stack Overflow
-  </span>
-</div>
-
-      <div onclick="window.open('https://www.linkedin.com/in/roshan-jossey-b00989a3/')" class="link-card linkedin">
-  <img src="images/linkedin-icon.png" alt="">
-  <span>
-    LinkedIn
-  </span>
-</div>
-
-      <div onclick="window.open('https://twitter.com/sudo__bangbang')" class="link-card twitter">
-  <img src="images/twitter-icon.png" alt="">
-  <span>
-    Twitter
-  </span>
-</div>
-
-      <div onclick="window.open('https://dribbble.com/sudo_bangbang')" class="link-card dribbble">
-  <img src="images/dribbble-icon.png" alt="">
-  <span>
-    Dribbble
-  </span>
-</div>
-
-    </div>
+      <figure class="editor" role="region" aria-labelledby="editor-title-index-js">
+  <figcaption id="editor-title-index-js" class="editor__titlebar">
+    <span class="editor__controls" aria-hidden="true">
+      <span class="editor__dot editor__dot--close"></span>
+      <span class="editor__dot editor__dot--minimize"></span>
+      <span class="editor__dot editor__dot--maximize"></span>
+    </span>
+    <span class="editor__filename">index.js</span>
+    <span class="editor__mode">javascript</span>
+  </figcaption>
+  <div class="editor__body">
+    <pre class="editor__pre" tabindex="0"><code class="editor__code highlight"><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+</pre></td><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">roshan</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">firstName</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Roshan</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">lastName</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Jossey</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">avatar</span><span class="p">:</span> <span class="dl">'</span><span class="s1">https://avatars1.githubusercontent.com/u/8488446?v=3&amp;s=400</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">createdAt</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Wed Aug 18 08:30:55 +0530 1993</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">skills</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">technical</span><span class="p">:</span> <span class="p">[</span>
+      <span class="dl">'</span><span class="s1">JavaScript</span><span class="dl">'</span><span class="p">,</span>
+      <span class="dl">'</span><span class="s1">TypeScript</span><span class="dl">'</span><span class="p">,</span>
+      <span class="dl">'</span><span class="s1">Vuejs</span><span class="dl">'</span><span class="p">,</span>
+      <span class="dl">'</span><span class="s1">Nuxt</span><span class="dl">'</span><span class="p">,</span>
+      <span class="dl">'</span><span class="s1">Ruby</span><span class="dl">'</span><span class="p">,</span>
+      <span class="dl">'</span><span class="s1">Reactjs</span><span class="dl">'</span><span class="p">,</span>
+      <span class="dl">'</span><span class="s1">Ruby on Rails</span><span class="dl">'</span><span class="p">,</span>
+      <span class="dl">'</span><span class="s1">Python</span><span class="dl">'</span><span class="p">,</span>
+    <span class="p">],</span>
+    <span class="na">developmentPractices</span><span class="p">:</span> <span class="p">[</span>
+      <span class="dl">'</span><span class="s1">Test Driven Development</span><span class="dl">'</span><span class="p">,</span>
+      <span class="dl">'</span><span class="s1">Pair Programming</span><span class="dl">'</span><span class="p">,</span>
+      <span class="dl">'</span><span class="s1">Object oriented programming</span><span class="dl">'</span><span class="p">,</span>
+      <span class="dl">'</span><span class="s1">Continuous integration</span><span class="dl">'</span><span class="p">,</span>
+    <span class="p">],</span>
+  <span class="p">},</span>
+  <span class="na">interests</span><span class="p">:</span> <span class="p">[</span>
+    <span class="dl">'</span><span class="s1">Films</span><span class="dl">'</span><span class="p">,</span>
+    <span class="dl">'</span><span class="s1">Mathematical Logic</span><span class="dl">'</span><span class="p">,</span>
+    <span class="dl">'</span><span class="s1">Abstract algebra</span><span class="dl">'</span><span class="p">,</span>
+    <span class="dl">'</span><span class="s1">Philosophy</span><span class="dl">'</span><span class="p">,</span>
+    <span class="dl">'</span><span class="s1">Politics</span><span class="dl">'</span><span class="p">,</span>
+  <span class="p">],</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre>
   </div>
-</div>
+</figure>
+
+    </section>
+
+    <section class="page__links" aria-labelledby="links-heading">
+      <h2 id="links-heading" class="visually-hidden">Social and professional links</h2>
+      <div class="card-container">
+        <a
+  href="https://github.com/roshanjossey"
+  class="link-card github"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <img src="/images/github-icon.png" alt="" width="200" height="150" decoding="async">
+  <span class="link-card__label">GitHub</span>
+  <span class="visually-hidden">(opens in new tab)</span>
+</a>
+
+        <a
+  href="https://medium.com/@roshanjossey"
+  class="link-card medium"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <img src="/images/medium-icon.png" alt="" width="200" height="150" decoding="async">
+  <span class="link-card__label">Medium</span>
+  <span class="visually-hidden">(opens in new tab)</span>
+</a>
+
+        <a
+  href="http://stackoverflow.com/users/3951782/sudo-bangbang"
+  class="link-card stackoverflow"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <img src="/images/stackoverflow-icon.png" alt="" width="200" height="150" decoding="async">
+  <span class="link-card__label">Stack Overflow</span>
+  <span class="visually-hidden">(opens in new tab)</span>
+</a>
+
+        <a
+  href="https://www.linkedin.com/in/roshan-jossey-b00989a3/"
+  class="link-card linkedin"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <img src="/images/linkedin-icon.png" alt="" width="200" height="150" decoding="async">
+  <span class="link-card__label">LinkedIn</span>
+  <span class="visually-hidden">(opens in new tab)</span>
+</a>
+
+        <a
+  href="https://twitter.com/sudo__bangbang"
+  class="link-card twitter"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <img src="/images/twitter-icon.png" alt="" width="200" height="150" decoding="async">
+  <span class="link-card__label">Twitter</span>
+  <span class="visually-hidden">(opens in new tab)</span>
+</a>
+
+        <a
+  href="https://dribbble.com/sudo_bangbang"
+  class="link-card dribbble"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <img src="/images/dribbble-icon.png" alt="" width="200" height="150" decoding="async">
+  <span class="link-card__label">Dribbble</span>
+  <span class="visually-hidden">(opens in new tab)</span>
+</a>
+
+      </div>
+    </section>
+  </div>
+</main>
 
   </body>
 </html>

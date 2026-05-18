@@ -1,68 +1,128 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Roshan's site</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Selected projects by Roshan Jossey.">
+    <meta name="color-scheme" content="dark">
+    <title>Roshan Jossey — Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="/stylesheets/site.css" rel="stylesheet" />
-    <script src="/javascripts/site.js"></script>
   </head>
 
   <body class="app app_index">
-    <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-6 col-sm-12">
-      <ul class="nav navbar-nav file-list">
-  <li class=""><a href="/">index.js</a></li>
-  <li class="active"><a href="/app">app.js</a></li>
-  <li onclick="window.open('https://drive.google.com/file/d/1xzvken20iATaaB-JNcsmbJrVb88BSWLW/view?usp=sharing')"><a> resume.pdf </a></li>
-</ul>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <main id="main-content" class="page">
+  <div class="page__grid">
+    <section class="page__editor" aria-labelledby="projects-heading">
+      <h1 id="projects-heading" class="visually-hidden">Projects</h1>
+      <nav class="editor-tabs" aria-label="Site sections">
+  <ul class="editor-tabs__list" role="list">
+    <li>
+      <a
+        href="/"
+        class="editor-tabs__tab"
+        
+      >
+        <span class="editor-tabs__icon" aria-hidden="true"></span>
+        index.js
+      </a>
+    </li>
+    <li>
+      <a
+        href="/app"
+        class="editor-tabs__tab editor-tabs__tab--active"
+        aria-current="page"
+      >
+        <span class="editor-tabs__icon" aria-hidden="true"></span>
+        app.js
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/file/d/1xzvken20iATaaB-JNcsmbJrVb88BSWLW/view?usp=sharing"
+        class="editor-tabs__tab"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="editor-tabs__icon editor-tabs__icon--pdf" aria-hidden="true"></span>
+        resume.pdf
+        <span class="visually-hidden">(opens in new tab)</span>
+      </a>
+    </li>
+  </ul>
+</nav>
 
-      <pre>
-<code>
-var projects = [
- {
-    name: 'First Contributions',
-    domain: 'Open source',
-    technologiesUsed: [
-      'markdown',
-      'reactjs'
-    ],
-  },
-  {
-    name: 'Deliver it',
-    domain: 'Continuous delivery',
-    technologiesUsed: [
-      'Dashing',
-      'google apps scripts',
-      'Slack'
-    ],
-  }
-];
-      </code>
-      </pre>
-    </div>
-    <div class="col-md-6 col-sm-12 card-container">
-      <div onclick="window.open('http://saasgrids.com')" class="project-card saasgrids">
-  <span>
-    saasgrids
-  </span>
-</div>
-
-      <div onclick="window.open('https://roshanjossey.github.io/first-contributions/')" class="project-card first-contributions">
-  <span>
-    First Contributions
-  </span>
-</div>
-
-    </div>
+      <figure class="editor" role="region" aria-labelledby="editor-title-app-js">
+  <figcaption id="editor-title-app-js" class="editor__titlebar">
+    <span class="editor__controls" aria-hidden="true">
+      <span class="editor__dot editor__dot--close"></span>
+      <span class="editor__dot editor__dot--minimize"></span>
+      <span class="editor__dot editor__dot--maximize"></span>
+    </span>
+    <span class="editor__filename">app.js</span>
+    <span class="editor__mode">javascript</span>
+  </figcaption>
+  <div class="editor__body">
+    <pre class="editor__pre" tabindex="0"><code class="editor__code highlight"><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">projects</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span>
+    <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">First Contributions</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">domain</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Open source</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">technologiesUsed</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">markdown</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">reactjs</span><span class="dl">'</span><span class="p">],</span>
+  <span class="p">},</span>
+  <span class="p">{</span>
+    <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Deliver it</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">domain</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Continuous delivery</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">technologiesUsed</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">Dashing</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">google apps scripts</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">Slack</span><span class="dl">'</span><span class="p">],</span>
+  <span class="p">},</span>
+<span class="p">];</span>
+</pre></td></tr></tbody></table></code></pre>
   </div>
-</div>
+</figure>
+
+    </section>
+
+    <section class="page__links" aria-labelledby="projects-links-heading">
+      <h2 id="projects-links-heading" class="visually-hidden">Project links</h2>
+      <div class="card-container">
+        <a
+  href="http://saasgrids.com"
+  class="project-card saasgrids"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <span class="project-card__label">saasgrids</span>
+  <span class="visually-hidden">(opens in new tab)</span>
+</a>
+
+        <a
+  href="https://roshanjossey.github.io/first-contributions/"
+  class="project-card first-contributions"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <span class="project-card__label">First Contributions</span>
+  <span class="visually-hidden">(opens in new tab)</span>
+</a>
+
+      </div>
+    </section>
+  </div>
+</main>
 
   </body>
 </html>

@@ -2,18 +2,21 @@
 
 ### [Demo](https://roshanjossey.github.io)
 
-This site is built using [middleman](https://middlemanapp.com)
+This site is built using [Middleman](https://middlemanapp.com). Source and published site both live on the `master` branch.
 
-Code is in gh-pages branch.
+## Local development
 
-In order to run this in local, fork this repo, clone it, do a bundle install then run middleman server
-
+```bash
+bundle install
+bundle exec middleman server
 ```
-middleman server
+
+Open http://localhost:4567
+
+## Build & publish to GitHub Pages
+
+```bash
+bundle exec rake publish
 ```
 
-In order to publish, use
-
-```
-rake publish BRANCH_NAME=master
-```
+This builds the site and updates the static files at the repository root for GitHub Pages.

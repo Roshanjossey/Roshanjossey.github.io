@@ -1,0 +1,42 @@
+.project-card {
+  flex: 1 1 100%;
+  min-height: 12rem;
+  min-height: calc(100vh / 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%) brightness(0.72) contrast(1.1);
+  transition: filter 0.25s ease, transform 0.2s ease;
+
+  &__label {
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.7);
+  }
+
+  &:hover {
+    filter: none;
+    transform: scale(1.005);
+  }
+
+  &:focus-visible {
+    outline: none;
+    filter: none;
+    box-shadow: inset $focus-ring;
+    z-index: 1;
+  }
+}
+
+.first-contributions {
+  background-image: url('../images/first-contributions.jpeg');
+}
+
+.saasgrids {
+  background-image: url('../images/github-battle.jpeg');
+}

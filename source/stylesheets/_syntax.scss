@@ -1,0 +1,15 @@
+// Rouge / Pygments token classes → Neovim-style colors
+.highlight {
+  .c, .cm, .c1, .cs { color: $text-muted; font-style: italic; } // comments
+  .k, .kd, .kn, .kp, .kr, .kt { color: $accent-purple; } // keywords
+  .s, .s1, .s2, .sb, .sc, .sd, .sh, .sx { color: $accent-green; } // strings
+  .m, .mi, .mf, .mh, .mo, .il { color: $accent-orange; } // numbers
+  .nf, .fm { color: $accent-blue; } // functions
+  .nc, .nn, .ne { color: $accent-cyan; } // types / classes
+  .na, .nv, .vc, .vg, .vi { color: $accent-cyan; } // variables / attrs
+  .no, .nb, .bp { color: $accent-orange; } // builtins / constants
+  .nt { color: $accent-red; } // tags
+  .o, .ow { color: $accent-cyan; } // operators
+  .p { color: $text-dim; } // punctuation
+  .nl { color: $text-primary; } // names
+}
